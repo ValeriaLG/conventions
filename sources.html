@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+  <title>Conventions in NOVA Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content="A page listing all the sources used on this website."/>
+<meta name="keywords" content="sources, school project, conventions, geek conventions, Northern Virginia"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="functions.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryJSONDataSet.js" type="text/javascript"></script>
+<script type="text/javascript">
+//creates the object from the data set.
+//this completes the e. requirement on Project 3.
+var dsSources = new Spry.Data.JSONDataSet("sourcesList.json",{path:"sources.source"});
+
+
+$(document).ready(function() {
+
+$('.navbar-Area').load("navbar.html");
+
+
+});
+</script>
+</head>
+<body>
+  <!-- Container body begins -->
+  <div class="container-fluid">
+
+  <!--Hero image starts -->
+
+    <div class="heroImage misc">
+
+  </div>
+
+  <!--Hero image ends-->
+
+  <!--Navigation menu  starts-->
+
+  <div class="navbar-Area">
+
+
+  </div>
+
+
+  <!--Navigation menu  ends-->
+
+<!-- Backdrop start-->
+<div class="backDrop Magfest">
+<br/>
+<br />
+<br/>
+
+
+<!--- Sources Box Begin --->
+<div class="row">
+<div class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3 about-top sources sideBoxes">
+<div class="table-responsive">
+    <h1>Sources</h1>
+  <div spry:region="dsSources">
+<table id="source">
+  <tr><th class="sourceType" colspan="5">Picture Sources</th></tr>
+  <tr>
+    <th scope="col">Description</th>
+    <th scope="col">Retrieved From</th>
+    <th scope="col">Copyright Owner</th>
+    <th scope="col">Copyright Date</th>
+    <th scope="col">Date Accessed</th>
+  </tr>
+  <!-- the data set that is to be repeated with the columns specified -->
+  <tr spry:repeat="dsSources" spry:hover="rowHover" spry:setrow="dsSources">
+  <td>{description}</td>
+  <td>{retrievedFrom}</td>
+  <td>{copyrightOwner}</td>
+  <td>{copyrightDate}</td>
+  <td>{dateAccessed}</td>
+  </tr>
+
+<!-- these misc sources are very few in number and so doesn't need to be put in a json file -->
+  <tr><th class="sourceType" colspan="5">Misc Sources</th></tr>
+  <tr>
+    <td><a href="main.css">My Custom CSS file</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="sourcesList.json">My JSON file for sources</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="answerLists.json">My JSON file for faqs page</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+
+</div>
+<br />
+<br />
+<p class="minorDetail">Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.</p><br/>
+<br />
+</div>
+</div>
+
+
+<!--- Sources Box Ends --->
+
+
+<br/>
+<br />
+<br/>
+
+
+<br />
+</div>
+<!-- Backdrop ends-->
+
+<!--- Footer Begin --->
+<div class="backDrop3">
+  <div class="row footer">
+<div class="col-lg-12 col-md-12 col-md-offset-0 col-sm-12 col-xs-12 footer">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+</div>
+</div>
+</div>
+<!--- Footer End--->
+
+</div>
+<!-- Container body ends -->
+</body>
+</html>

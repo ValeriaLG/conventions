@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Conventions in NOVA Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content="A quick survey page."/>
+<meta name="keywords" content="survey, school project, conventions, geek conventions, Northern Virginia"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.15/jquery.form-validator.min.js"></script>
+
+<script src="functions.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+function start(){
+  document.getElementById("btn").addEventListener("click", changeColor, false); //this completes the b. requirement on Project 3. This activates when the user clicks submit button after entering their color in the first survey box.
+
+  document.getElementById("removeBlock").addEventListener("click", removeSurvey, false); //this completes the a. requirement on Project 3. This activates when the user clicks the x on the page inside it's corresponding survey section.
+
+}
+
+function changeColor(){
+
+  //this completes the b. requirement on Project 3.
+
+  //this gets the inputted color that the user enters in a form field and assigns it to a variable.
+var favoriteColor = document.getElementById("favColor").value;
+
+//gets the item to be operated on which in this case is the first survey box.
+var toChange = document.getElementById("surveyQs");
+
+//changes the item to be operated on to the user's specified color. Both are varaibles here.
+toChange.setAttribute("style", "border-top-color: " + favoriteColor );
+
+
+}
+
+
+function removeSurvey(){
+  //this completes the a. requirement on Project 3. Gets the item to be removed by it's id which in this case is an entire row, and assigns it to a variable
+  var toRemove = document.getElementById("thingRemove");
+
+//this then acts upon it by removing it.
+toRemove.removeChild(toRemove.firstChild);
+
+  //alternative: document.getElementById("surveyQs").remove()
+}
+
+
+window.addEventListener("load", start, false);
+
+
+</script>
+</head>
+<body>
+  <!-- Container body begins -->
+  <div class="container-fluid">
+
+  <!--Hero image starts -->
+
+    <div class="heroImage misc" id="miscBanner">
+
+  </div>
+
+  <!--Hero image ends-->
+
+  <!--Navigation menu starts-->
+  <div class="navbar-Area">
+
+
+  </div>
+  <!--Navigation menu ends-->
+
+
+
+
+
+<!-- Backdrop start-->
+<div class="backDrop Magfest">
+<br/>
+<br />
+        <div id="nameArea"></div>
+<br />
+<br/>
+
+<!-- Box for survey starts-->
+<div class="row" id="thingRemove">
+<div class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3 about-top sideBoxes" id="surveyQs">
+
+
+<span class='glyphicon glyphicon-remove' title='Click here and reload to remove this block' id='removeBlock'></span><span class="minorDetail">Don't want to input your personal information? Click here to remove!</span>
+
+<h3>Want to hear more about geeky conventions in your area? Fill out your info below:</h3>
+<form>
+
+<!-- start of personal details fieldset -->
+<fieldset>
+  <legend>Personal Details: </legend>
+
+  <!-- name field starts. Validation is here -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" class="form-control textBoxArea" placeholder="Your name" data-validation="length" data-validation-length="1-20" />
+  </div>
+  <!-- Name field ends-->
+
+
+<!-- favorite color starts -->
+  <div class="form-group col-md-5 col-md-offset-1">
+    <label for="favColor">Favorite Color: </label>
+    <input type="text" name="favColor" id="favColor" class="form-control textBoxArea" placeholder="Favorite Color" />
+    </div>
+  </div>
+<!-- favorite color ends -->
+
+<!-- email field starts. Validation is here-->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" class="form-control textBoxArea" placeholder="example@example.com" data-validation="email">
+    </div>
+  </div>
+<!-- email field ends-->
+
+
+<!-- Where Live Starts -->
+  <div class="form-row">
+
+    <div class="form-group col-md-4">
+      <label for="city">City: </label>
+      <input type="text" name="city" id="city" class="form-control textBoxArea" placeholder="City" data-validation="length" data-validation-length="1-10" />
+    </div>
+
+    <div class="form-group col-md-4 col-md-offset-1">
+      <label for="state">State: </label>
+      <select id="state" class="form-control" required>
+          <option>Select Your State</option>
+          <option value="va">Virginia</option>
+          <option value="nc">North Carolina</option>
+          <option value="sc">South Carolina</option>
+          <option value="tn">Tennessee</option>
+          <option value="ky">Kentucky</option>
+          <option value="wv">West Virginia</option>
+          <option value="ny">New York</option>
+          <option value="pa">Pennsylvania</option>
+        </select>
+    </div>
+
+<!-- Validation is here -->
+    <div class="form-group col-md-2 col-md-offset-1">
+      <label for="zip">Zip: </label>
+      <input type="text" name="zip" id="zip" class="form-control textBoxArea" placeholder="Zip" data-validation="number" data-validation-allowing="float" />
+    </div>
+
+
+  </div>
+<!-- Where Live Ends -->
+
+  <br/>
+<!-- button Group start -->
+<div class="text-center buttonsGroup">
+    <input type="button" name="btn" class="buttonsSubmitting" id="btn" value="Submit">
+    <input type="reset" value="Reset" class="buttonsSubmitting">
+</div>
+<!-- button Group end -->
+
+<p class="minorDetail">This is only a dummy form for educational purposes as it doesn't actually submit anything.</p>
+
+</fieldset>
+</form>
+</div>
+</div>
+
+<!-- end of personal details fieldset -->
+<br />
+<br />
+<br />
+<!-- start of convention experiences fieldset -->
+<div class="row">
+<div class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3 about-top sideBoxes">
+  <h2>Take a short survey!</h2>
+  <form>
+<fieldset>
+  <legend>Your Experience with Conventions:</legend>
+
+  <!-- option value selection list starts for favorite convention-->
+  <div class="text-center">
+    <h4><label for="favorite">Favorite Convention on this website?</label></h4>
+    <div class="input-group lists">
+    <select id="favorite">
+      <option value="n/a">Can't Decide</option>
+      <option value="Magfest">Magfest</option>
+      <option value="Magfest">Katsucon</option>
+      <option value="Magfest">AnimeUSA</option>
+    </select>
+    </div>
+  </div>
+  <!-- option value selection list ends for favorite convention-->
+
+  <!-- radio selection starts for frequency-->
+  <h4><label>How often do you go to conventions?</label></h4>
+
+<!-- radio buttons for frequency start. JQuery UI radio buttons are here -->
+  <div id="RadioButtons1">
+    <input type="radio" name="RadioButtons1" id="Radio1" class="frequencyNumber" value="Often">
+    <label for="Radio1">Often</label>
+    <input type="radio" name="RadioButtons1" id="Radio2" class="frequencyNumber" value="Sometimes">
+    <label for="Radio2">Sometimes</label>
+    <input type="radio" name="RadioButtons1" id="Radio3" class="frequencyNumber" value="Occassionally">
+    <label for="Radio3">Occassionally</label>
+    <input type="radio" name="RadioButtons1" id="Radio4" class="frequencyNumber" value="Rarely">
+    <label for="Radio4">Rarely</label>
+  	<input type="radio" name="RadioButtons1" id="Radio5" class="never" value="Never">
+    <label for="Radio5">Never</label>
+  </div>
+<!-- radio selection ends for frequency-->
+
+
+  <br/>
+
+<!-- this appears on click of one of the above radio buttons -->
+  <div id="howManyTimes">
+
+  </div>
+
+
+  </fieldset>
+  <!-- end of convention experiences fieldset -->
+
+
+
+
+  <!-- start of general website questions fieldset which is only a checkbox list-->
+  <fieldset>
+    <legend>Website Questions: </legend>
+  <h4><label>Any problems with this Website?</label></h4>
+
+
+
+<!-- check box group problems starts. JQuery UI checkbox buttons are here  -->
+  <div id="Checkboxes1">
+    <input type="checkbox" id="Checkbox1" value="Broken Link">
+    <label for="Checkbox1">Broken Link</label>
+    <input type="checkbox" id="Checkbox2" value="Element on page is misaligned">
+    <label for="Checkbox2">Element on page is misaligned</label>
+    <input type="checkbox" id="Checkbox3" value="Broken image">
+    <label for="Checkbox3">Broken image</label>
+    <input type="checkbox" id="Checkbox4" value="Inaccuracies">
+    <label for="Checkbox4">Inaccuracies</label>
+    <input type="checkbox" id="Checkbox5" value="Mispellings">
+    <label for="Checkbox5">Mispellings</label>
+    <input type="checkbox" id="Checkbox6" value="Other">
+    <label for="Checkbox6">Other</label>
+  </div>
+  <!-- check box group problems ends -->
+
+
+
+  <!-- text area place start. Appears on click of the Other button-->
+  <div class="otherFieldBox">
+  </div>
+  <!-- text area place end-->
+
+  	<br/>
+  </fieldset>
+  <!-- end of general website questions fieldset which is only a checkbox list-->
+
+
+  <!--  start of buttons -->
+  <div class="input-group button">
+    <button class="buttonsSubmitting" type="submit">Submit</button>
+    <button class="buttonsSubmitting" type="reset">Reset</button>
+  </div>
+  <!--  end of buttons -->
+
+  </form>
+  <br />
+  <br />
+
+  <p class="minorDetail">This is only a dummy form for educational purposes as it doesn't actually submit anything.</p>
+
+  </div>
+  </div>
+  <!-- Box for survey ends-->
+
+<br/>
+<br />
+<br/>
+
+
+<br />
+</div>
+<!-- Backdrop ends-->
+
+<!--- Footer Begin --->
+<div class="backDrop3">
+  <div class="row footer">
+<div class="col-lg-12 col-md-12 col-md-offset-0 col-sm-12 col-xs-12 footer">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+</div>
+</div>
+</div>
+<!--- Footer End--->
+
+</div>
+<!-- Container body ends -->
+
+<script type="text/javascript">
+
+//this is what the jquery ui library does to act upon the above buttons
+$(function() {
+	$( "#RadioButtons1" ).buttonset();
+});
+$(function() {
+	$( "#Checkboxes1" ).buttonset();
+});
+
+</script>
+
+<script>
+
+    //validates form validation areas above.
+		$.validate();
+
+
+    //this ready function assigns the innerhtml elements to add to the page to variables first. Then there are click events to trigger the showing of these innerhtml elements including one with a textarea field that contains a maxlength validator.
+    $(document).ready(function() {
+      var otherField = "<p><label><textarea required name='comment' cols='50' rows='2' id='comment' placeholder='Enter detailed problem here.'></textarea></label><br/>(<span id='maxlength'>100</span> characters left)</p>"
+
+      var stepField = "<h4><label>How many times have you gone this past year?</label></h4><div class='input-group times' id='times'><input type='number' name='amount' min='0' max='365' step='1' value='1'></div>";
+
+
+
+    $('.navbar-Area').load("navbar.html");
+
+
+    $('#Checkbox6').click(function() {
+      $('.otherFieldBox').html(otherField);
+      $('#comment').restrictLength($('#maxlength'));
+
+    });
+
+    $('.frequencyNumber').click(function() {
+      $('#howManyTimes').html(stepField);
+    });
+
+    $('.never').click(function() {
+      $('#howManyTimes').html("");
+    });
+
+
+    });
+	</script>
+
+</body>
+</html>

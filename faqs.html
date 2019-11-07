@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Conventions in NOVA Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="Magfest, Katsucon, AnimeUSA, school project, conventions, geek conventions, Northern Virginia"/>
+<meta charset="UTF-8"/>
+<meta name="description" content="Here's a few geek conventions worth checking out in Northern Virginia."/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="main.css"/>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript">
+var request;
+
+function start(){
+  differentAnswers();
+}
+
+
+
+function getAnswer(e){
+
+
+try {
+
+//starts the http request
+ request = new XMLHttpRequest();
+
+  if (request){
+    //sends the element that was affected or called upon upon state change
+    request.addEventListener("readystatechange", function(){changeOfState(e);}, false);
+
+    //gets the resource from the server
+    request.open('GET', "answerLists.json", true);
+
+    request.setRequestHeader("Accept", "application/json; charset=utf-8");
+
+    request.send(null);
+  }
+
+} catch (exception) {
+  alert("failed");
+
+}
+
+}
+
+
+function changeOfState(e){
+
+  //if the status codes are good to go then it retrieves the response text to parse since it's in json and then sends that off along with the element that was affected upon to the next function
+  if (request.readyState == 4  && request.status == 200){
+
+    var dataAnswers = JSON.parse(request.responseText);
+    displayAnswers(dataAnswers, e);
+
+  }
+
+}
+
+
+function displayAnswers(dataAnswers, e){
+
+  //this goes through the entirety of what was passed and parsed and matches the id of the element acted upon here to the id in the json object file.
+  //it then replaces the html below with the answer from the json file that corresponded to that id
+  for (var i = 0; i < dataAnswers.length; i++){
+    if (e.id == dataAnswers[i].id){
+      document.getElementById("answer").innerHTML = '<div class=\'row about\'><div class=\'col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 conventions aboutAreaBox\'><h4>Answer: </h4><p>' + dataAnswers[i].faqAnswer + '</p></div></div>';
+
+    }
+
+  }
+
+}
+
+
+function differentAnswers(){
+
+  //these get the id from each button on click and then calls the above functions on them
+    document.getElementById("answer1").addEventListener("click", function(){getAnswer(this);}, false);
+
+    document.getElementById("answer2").addEventListener("click", function(){getAnswer(this);}, false);
+
+    document.getElementById("answer3").addEventListener("click", function(){getAnswer(this);}, false);
+
+    document.getElementById("answer4").addEventListener("click", function(){getAnswer(this);}, false);
+
+    document.getElementById("answer5").addEventListener("click", function(){getAnswer(this);}, false);
+
+}
+
+
+window.addEventListener("load", differentAnswers, false);
+
+
+
+$(document).ready(function() {
+
+$('.navbar-Area').load("navbar.html");
+
+
+});
+
+
+</script>
+</head>
+<!-- body start -->
+<body class="magfest">
+    <!-- Container body begins -->
+  <div class="container-fluid">
+
+  <!--Hero image starts -->
+
+    <div class="heroImage misc">
+
+  </div>
+
+  <!--Hero image ends-->
+
+  <!--Navigation menu starts-->
+<div class="navbar-Area">
+
+
+</div>
+  <!--Navigation menu ends-->
+
+
+<!-- Backdrop start-->
+<div class="faqsBackDrop">
+  <br />
+
+  <br />
+
+
+  <!--- Question boxes begin --->
+<div class="row faqs">
+<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 conventions">
+  <div class="card">
+      <div class="card-body">
+<h4>Why are there multiple prices?</h4>
+
+
+
+  <input type="button" name="answer1" id="answer1" value="Answer" class="btn btn-primary answerBtn"/>
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 conventions">
+  <div class="card">
+      <div class="card-body">
+
+<h4 id="question2">Where can I find a list of conventions in other states not offered on your website?</h4>
+
+
+<input type="button" name="answer2" id="answer2" value="Answer" class="btn btn-primary answerBtn"/>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="row faqs">
+<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 conventions">
+
+  <div class="card">
+      <div class="card-body">
+
+<h4>Which convention would fit for me?</h4>
+
+
+<input type="button" name="answer3" id="answer3" value="Answer" class="btn btn-primary answerBtn"/>
+
+</div>
+</div>
+
+</div>
+
+<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 conventions">
+
+  <div class="card">
+      <div class="card-body">
+
+<h4>How do I get my badge for it?</h4>
+
+<input type="button" name="answer4" id="answer4" value="Answer" class="btn btn-primary answerBtn" />
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row faqs">
+<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 conventions">
+
+  <div class="card">
+      <div class="card-body">
+
+<h4>Do I need to dress up or cosplay?</h4>
+
+
+<input type="button" name="answer5" id="answer5" value="Answer" class="btn btn-primary answerBtn"/>
+
+</div>
+</div>
+
+</div>
+</div>
+<!--- Question boxes end --->
+
+
+
+<!--- answer box begin --->
+<div id="answer">
+
+
+
+</div>
+<!--- answer box end --->
+
+<br />
+<br/>
+<br />
+<br />
+</div>
+<!--- BackDrop End --->
+
+
+
+<div class="backDrop3">
+  <div class="row footer">
+<div class="col-lg-12 col-md-12 col-md-offset-0 col-sm-12 col-xs-12 footer">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+</div>
+</div>
+</div>
+<!--- Footer End--->
+
+</div>
+</body>
+</html>

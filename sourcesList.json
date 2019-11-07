@@ -1,0 +1,192 @@
+//JSON document
+{
+"sources": {
+"source" : [
+{
+  "description" : "<a href='magfest.html#iconGraph'>Rising Bar Graph</a>",
+  "retrievedFrom": "<a href='https://commons.wikimedia.org/wiki/File:Simpleicons_Business_rising-bar-graph-with-arrow-up.svg'>Commons Wikimedia</a>",
+  "copyrightOwner": "<a href='http://www.simpleicon.com/'>SimpleIcon</a>",
+  "copyrightDate": "7 March 2016",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" : "<a href='magfest.html#magfest_banner'>Magfest Banner</a>",
+  "retrievedFrom": "<a href='https://commons.wikimedia.org/wiki/MAGFest#/media/File:Machinae_Supremacy_at_MAGFest_13_2.jpg'>Commons Wikimedia</a>",
+  "copyrightOwner": "<a href='https://www.flickr.com/photos/dmuth/16291851697/'>Douglas Muth</a>",
+  "copyrightDate":"23 January 2015",
+  "dateAccessed":"27 September 2018",
+
+
+},
+{
+  "description" : "<a href='magfest.html#socialMedia'>Social Media Icons</a>",
+  "retrievedFrom": "<a href='https://pixabay.com/en/social-media-icons-1084962/'>Pixabay</a>",
+  "copyrightOwner": "<a href='https://pixabay.com/en/users/EriktheGreat-507753/'>EriktheGreat</a>",
+  "copyrightDate":"9 December 2015",
+  "dateAccessed":"27 September 2018",
+
+},
+{
+  "description" :"<a href='index.html#centralBanner'>Central Banner</a>",
+  "retrievedFrom": "<a href='https://pixabay.com/en/comic-con-convention-centre-people-2228405/'>Pixabay</a>",
+  "copyrightOwner": "<a href='https://pixabay.com/en/users/tunechick83-4823836/'>tunechick83</a>",
+  "copyrightDate": "16 April 2017",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" : "<a href='survey.html#miscBanner'>Misc Page Banner</a>",
+  "retrievedFrom": "<a href='https://hwfr.wordpress.com/2018/09/03/doodlin-3840x2160/'>WordPress</a>",
+  "copyrightOwner": "<a href='https://www.reddit.com/user/SleekBackground'>SleekBackground</a>",
+  "copyrightDate": "3 September 2018",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" :"<a href='index.html#bannerMain'>Banner Dot Pattern Background</a>",
+  "retrievedFrom": "<a href='https://pixabay.com/en/banner-dot-pattern-template-circle-2721689/'>Pixabay</a>",
+  "copyrightOwner": "<a href='https://pixabay.com/en/users/DavidZydd-985081/''>DavidZydd</a>",
+  "copyrightDate": "6 September 2017",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" : "<a href='katsucon.html#construction'>Construction Lady</a>",
+  "retrievedFrom": "<a href='https://pixabay.com/en/woman-construction-helmet-tool-2759503/'>Pixabay</a>",
+  "copyrightOwner": "<a href='https://pixabay.com/en/users/whitesession-4645995/'>whitesession</a>",
+  "copyrightDate": "17 September 2017",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" : "<a href='magfest.html#star1'>Gold Star (click to make gold)</a>",
+  "retrievedFrom": "<a href='https://commons.wikimedia.org/wiki/File:Gold_Star.svg'>Commons Wikimedia</a>",
+  "copyrightOwner": "<a href='https://commons.wikimedia.org/wiki/User:Yakiv_Gluck'>Yakiv Gluck</a>",
+  "copyrightDate": "29 December 2009",
+  "dateAccessed": "18 October 2018",
+
+},
+{
+  "description" : "<a href='magfest.html#star1'>Empty Star</a>",
+  "retrievedFrom": "<a href='https://en.wikipedia.org/wiki/File:Empty_Star.svg'>Wikipedia</a>",
+  "copyrightOwner": "<a href='https://commons.wikimedia.org/wiki/User:Kbolino'>Kbolino</a>",
+  "copyrightDate": "9 November 2006",
+  "dateAccessed": "18 October 2018",
+
+},
+{
+  "description" : "<a href='animeusa.html#miscBanner'>AnimeUSA banner</a>",
+  "retrievedFrom": "<a href='https://commons.wikimedia.org/wiki/File:Hatakosen_Drinks.jpg'>Commons Wikimedia</a>",
+  "copyrightOwner": "Simon King",
+  "copyrightDate": "25 November 2016",
+  "dateAccessed": "18 October 2018",
+
+},
+{
+  "description" : "<a href='index.html#randomPics'>Comic Speech Bubbles template</a>",
+  "retrievedFrom": "<a href='https://pixabay.com/en/balloons-comic-talk-bubble-1187260/'>Pixabay</a>",
+  "copyrightOwner": "<a href='https://pixabay.com/en/users/Pixaline-1569622/'>Pixaline</a>",
+  "copyrightDate": "9 February 2016",
+  "dateAccessed": "18 October 2018",
+
+},
+{
+  "description" : "<a href='index.html#randomPics'>Speech Bubbles solo</a>",
+  "retrievedFrom": "<a href='https://commons.wikimedia.org/wiki/File:Speech_bubble.svg'>Wikipeda</a>",
+  "copyrightOwner": "<a href='https://commons.wikimedia.org/wiki/User:Amada44'>Amada44</a>",
+  "copyrightDate": "20 February 2008",
+  "dateAccessed": "18 October 2018",
+
+},
+{
+  "description" : "<a href='index.html#newspaperRoll'>Newspaper Roll</a>",
+  "retrievedFrom": "<a href='https://commons.wikimedia.org/wiki/File:Emojione_BW_1F5DE.svg'>Commons Wikimedia</a>",
+  "copyrightOwner": "<a href='https://github.com/emojione/emojione/graphs/contributors'>emojione</a>",
+  "copyrightDate": "3 December 2016",
+  "dateAccessed": "31 October 2018",
+
+},
+{
+  "description" : "<a href='katsucon.html#katsucon_banner'>Katsucon banner</a>",
+  "retrievedFrom": "<a href='https://www.flickr.com/photos/prayitnophotography/16987456150'>Flickr</a>",
+  "copyrightOwner": "<a href='https://www.flickr.com/photos/prayitnophotography/'>Prayitno</a>",
+  "copyrightDate": "8 April 2015",
+  "dateAccessed": "13 December 2018",
+
+},
+{
+  "description" : "<a href='otakon.html'>Otakon Banner</a>",
+  "retrievedFrom": "<a href='https://www.flickr.com/photos/apreche/212103632'>Flickr</a>",
+  "copyrightOwner": "<a href='https://www.flickr.com/photos/apreche/'>Scott Rubin</a>",
+  "copyrightDate": "5 August 2006",
+  "dateAccessed": "29 January 2019",
+
+},
+{
+  "description" :"<a href='magfest.html'>Magfest Page</a>",
+  "retrievedFrom": "<a href='https://en.wikipedia.org/wiki/MAGFest'>Wikipedia</a>",
+  "copyrightOwner": "<a href='https://en.wikipedia.org/wiki/Wikipedia:About'>Wikimedia Commons</a>",
+  "copyrightDate": "26 September 2018",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" : "<a href='index.html#moreConventions'>\"More Comic Conventions in the Area!\" news article</a>",
+  "retrievedFrom": "<a href='https://www.northernvirginiamag.com/things-to-do/things-to-do-features/2018/06/06/comic-cons-are-assembling-across-nova/'>Northern Virginia Magazine</a>",
+  "copyrightOwner": "<a href='https://www.northernvirginiamag.com/tag/michael-baldertson/'>Michael Baldertson of Northern Virginia Magazine</a>",
+  "copyrightDate": "6 June 2018",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" : "<a href='index.html#moreConventions'>\"Otakon Abandons the Baltimore Convention Center for D.C.\" news article</a>",
+  "retrievedFrom": "<a href='http://www.baltimoresun.com/news/maryland/baltimore-city/south-baltimore/bs-md-ci-otakon-moving-20130811-story.html'>Baltimore Sun</a>",
+  "copyrightOwner": "<a href='https://www.northernvirginiamag.com/tag/michael-baldertson/''>Carrie Wells of The Baltimore Sun</a>",
+  "copyrightDate": "11 August 2013",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+  "description" : "<a href='index.html#moreConventions'>\"Awesome Con Invites more Celebrities\" news article</a>",
+  "retrievedFrom": "<a href='http://bristowbeat.com/news/three-new-comic-cons-debut-northern-virginia-awesome-con-increases-celebrity-lineup-guests/'>BristowBeat</a>",
+  "copyrightOwner": "<a href='http://bristowbeat.com/author/shaw/'>Jason Shaw of Bristow Beat</a>",
+  "copyrightDate": "11 March 2018",
+  "dateAccessed": "27 September 2018",
+
+},
+{
+ "description" : "<a href='animeusa.html'>AnimeUSA Page</a>",
+ "retrievedFrom" : "<a href='http://animeusa.org/'>AnimeUSA</a>",
+ "copyrightOwner": "<a href='http://animeusa.org/about-anime-usa-501c3-mission/'>Anime USA Org</a>",
+ "copyrightDate" : "26 September 2018",
+ "dateAccessed" : "18 October 2018"
+
+},
+{
+  "description" : "<a href='animeusa.html'>AnimeUSA Facts</a>",
+  "retrievedFrom": "<a href='https://en.wikipedia.org/wiki/Anime_USA'>Wikipedia</a>",
+  "copyrightOwner": "<a href='https://en.wikipedia.org/wiki/Wikipedia:About'>Wikipedia</a>",
+  "copyrightDate": "2 October 2018",
+  "dateAccessed": "18 October 2018",
+
+},
+{
+  "description" : "<a href='katsucon.html'>Katsucon Facts</a>",
+  "retrievedFrom": "<a href='https://en.wikipedia.org/wiki/Katsucon'>Wikipedia</a>",
+  "copyrightOwner": "<a href='https://en.wikipedia.org/wiki/Wikipedia:About'>Wikipedia</a>",
+  "copyrightDate": "7 August 2018",
+  "dateAccessed": "3 December 2018",
+
+},
+{
+  "description" : "<a href='otakon.html'>Otakon Facts</a>",
+  "retrievedFrom": "<a href='https://en.wikipedia.org/wiki/Otakon'>Wikipedia</a>",
+  "copyrightOwner": "<a href='https://en.wikipedia.org/wiki/Wikipedia:About'>Wikipedia</a>",
+  "copyrightDate": "10 December 2018",
+  "dateAccessed": "29 January 2019",
+
+}
+]
+}
+}

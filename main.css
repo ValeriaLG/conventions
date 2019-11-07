@@ -1,0 +1,1026 @@
+/* hero image banner starts */
+.heroImage {
+  background: url('images/comic-con_banner.jpg') fixed center;
+  opacity: 0.7;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.heroImage.conventions {
+  background: url('images/MagFest_banner.jpg') fixed;
+  background-position: bottom right;
+  opacity: 0.7;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.heroImage.katsuconBanner {
+  background: url('images/katsucon_gaylord.jpg') fixed bottom right;
+  opacity: 0.7;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+
+.heroImage.AnimeUSA {
+  background: url('images/animeUSA_banner_v2.jpg') fixed bottom right;
+  opacity: 0.7;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.heroImage.Otakon {
+  background: url('images/otakon_banner.jpg') fixed bottom right;
+  opacity: 0.7;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.heroImage.misc{
+  background: url('images/backgroundOthers.jpg') fixed;
+  background-position: bottom right;
+  opacity: 0.7;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#magfest_banner, #katsucon_banner {
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+/* logo image for navbar */
+.logoImage {
+  width: 150px;
+
+}
+
+/* overrides bootstrap's navbar
+.navbar-default{
+  background-color: DimGrey;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  background-color: inherit;
+  color: inherit;
+}
+
+.navbar-default .navbar-nav>li>a, .active {
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  font-size: 1.3em;
+}
+
+
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: inherit;
+}*/
+
+/*.navbar-header .navbar-brand {
+  padding: 5px;
+}
+
+@media (min-width: 768px){
+.navbar-nav {
+  margin: 5px 0;
+
+}
+
+}*/
+
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.card-img-top {
+  opacity: 0.7;
+  object-fit: cover;
+  height: 233px;
+}
+
+
+.bg-secondary {
+  background-color: #929292 !important;
+}
+
+
+
+
+/* Area for list of events */
+
+
+/* when hover over hero image it changes the opacity */
+
+
+.heroImage:hover, .heroImage.others:hover, .heroImage.misc:hover, .heroImage.conventions:hover {
+  opacity: 1;
+}
+
+/* hero image banner ends */
+
+/* regular banner beings */
+
+.bg-white.text-dark {
+  height: 150px;
+}
+
+.banner {
+  width: auto;
+  min-width: auto;
+  height: 300px;
+  vertical-align: middle;
+  z-index: 2;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
+.banner.others {
+  width: auto;
+  min-width: auto;
+  height: 180px;
+  vertical-align: middle;
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* regular banner ends */
+
+/* navigation styling starts */
+
+.navigation {
+  max-width: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  background-color: DimGrey;
+
+}
+
+/* the drop portions of the nav bar start */
+.navigation .hoverDrop .drop{
+  display: none;
+  z-index: 4;
+  position: absolute;
+  min-width: 110px;
+  overflow: hidden;
+}
+
+
+.navigation .hoverDrop2 .drop2 {
+ display: none;
+ z-index: 4;
+ position: absolute;
+ min-width: 110px;
+ overflow: hidden;
+ font-size: 14px;
+}
+
+/* the drop portions of the nav bar end */
+
+/* the hover functionality of the drop portions of the nav bar start */
+
+.hoverDrop:hover .drop{
+  display: block;
+  margin-top: 33px;
+  margin-left: 110px;
+  background-color: DimGrey;
+
+}
+
+
+.hoverDrop2:hover .drop2 {
+  display: block;
+  margin-top: 33px;
+  margin-left: 220px;
+  background-color: DimGrey;
+
+}
+/* the hover functionality of the drop portions of the nav bar end */
+
+/* style for the links that are inside the sublists */
+.navigation .drop a, .navigation .drop2 a {
+  float: none;
+  clear: both;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  max-width: 114px;
+}
+
+
+/* style for the links that are outside */
+.navigation a {
+  text-align: center;
+  float: left;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: white;
+  min-width: 110px;
+}
+
+
+.navigation ul {
+  list-style-type: none;
+  display: inline;
+  margin: 20px 0;
+  font-family: inherit;
+  padding: 0;
+  font-size: 17px;
+  background-color: inherit;
+}
+
+/* hover effects for the outer links and the second sublists */
+.navigation a:hover {
+  background-color: Grey;
+}
+
+/* hover effects for the inner first sublists starts */
+.drop ul li:nth-child(1):hover a {
+  background-color: #004d99;
+}
+.drop ul li:nth-child(2):hover a {
+  background-color: #0066cc;
+}
+
+.drop ul li:nth-child(3):hover a {
+  background-color: #0080ff;
+}
+/* hover effects for the inner first sublists ends */
+
+/* navigation styling ends */
+
+
+/* labels on home page for the About and News */
+.label.label-default {
+  z-index: 5;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+}
+
+.label.label-default.about{
+  margin: auto;
+  vertical-align: middle;
+  display: block;
+  margin-bottom: 15px;
+  width: 140px;
+  font-size: 2em;
+}
+
+/* for the footer. it's always there even when the screen size is small */
+.backDrop3{
+  background-image:linear-gradient(DarkGray, DarkGray);
+}
+
+/* this is for the news article portion at the bottom of the index page */
+.col-lg-12.col-md-12.col-sm-12.col-xs-12.scroller {
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+/* footer components on every page */
+.footer {
+  color: white;
+  font-size: 0.9em;
+}
+
+.row.footer {
+  height: 80%;
+}
+
+.row *:not(a){
+  padding: 10px;
+}
+
+/*.row.about {
+  margin-top: 50px;
+}*/
+
+/* general tag styling begins */
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: -10px;
+}
+
+
+p {
+  font-size: 0.9em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  font-weight: inherit;
+}
+
+p a {
+  display: inline;
+  color: CornflowerBlue;
+  padding: 2px;
+  /*margin-left: -7px;
+  margin-right: -7px;*/
+}
+
+p a:hover {
+  color: LightCoral;
+  text-decoration: none;
+}
+
+li {
+  line-height: 1.3em;
+  font-size: 0.8em;
+}
+
+li.noList {
+  list-style: none;
+  text-indent: 3em;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+li.noBullet {
+  list-style: none;
+}
+
+ul.innerLists {
+  list-style: circle inside;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  text-indent: 1em;
+}
+
+body.magfest {
+  overflow-x: hidden;
+}
+
+/* general tag styling ends */
+
+/* table stuff begins */
+
+table th{
+  vertical-align: center;
+  margin: 0px auto;
+  width: 50%;
+}
+
+
+table, th, td, tr {
+  border-collapse: collapse;
+  /*border: 0.5px solid DimGrey;*/
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+td {
+  font-size: 0.8em;
+}
+
+.datesTable td.descriptionCell {
+  font-size: 0.9em;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+.dateNumber, .dateMonth {
+  font-size: 1.5em;
+  margin: 0px;
+  padding: 5px !important;
+  font-weight: 500;
+  border-left: 6px solid #D3D3D3;
+}
+
+.btn-secondary.calendarItems {
+  background-color: #777;
+  width: 100%;
+}
+
+th {
+  font-size: 0.9em;
+  background-color: #d9d9d9;
+}
+
+th.convention {
+  color: white;
+}
+
+th.convention.Magfest{
+  background-color: #004d99;
+}
+
+th.convention.Katsucon{
+  background-color: #0066cc;
+}
+
+th.convention.AnimeUSA{
+  background-color: #0080ff;
+}
+
+
+.sources table {
+  margin: auto;
+}
+
+.sources table th {
+  background-color: #464548;
+  color: white;
+}
+
+.sources table th.sourceType {
+  background-color: #2C2C2C;
+  color: white;
+}
+
+
+.sources td a {
+  color: black;
+}
+
+.sources td {
+  font-size: 0.7em;
+}
+
+/*table a:hover, .sources table a:hover{
+  color: LightCoral;
+  text-decoration: none;
+}*/
+
+
+/* table stuff ends */
+
+
+/* magfest specific things starts */
+
+/* the register button on the magfest page */
+.btn.btn-default.btn-block.active {
+  background-color: Gray;
+  color: white;
+  width: 50%;
+  max-width: 50%;
+}
+
+.interested h3 {
+  text-align: center;
+}
+
+p.minorDetail, span.minorDetail {
+  font-size: 0.6em;
+  margin: -10px auto;
+}
+
+img.social {
+  width: 25%;
+  display: inline;
+  margin: -10px 0px;
+  border: 1px transparent;
+}
+/* magfest specific things ends */
+
+/* form specifics starts */
+.radio, .checkbox, .lists, .times, .button {
+ vertical-align: middle;
+ justify-content: center;
+ margin: 0px auto;
+}
+
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label, .help-block {
+  font-size: 0.7em;
+  padding: 2px !important;
+  margin-bottom: 2px;
+}
+
+label {
+  padding: 2px 0px !important;
+  clear: both;
+  display: block;
+  font-weight: 450;
+}
+
+.buttonsGroup {
+  display: block;
+  clear: both;
+}
+
+/*.textBoxArea {
+  width: 400px;
+}*/
+
+
+.buttonsSubmitting {
+  padding: 14px;
+  margin: 3px;
+  font-size: 1em;
+  background-color: #f6f6f6;
+  border: 1.3px solid #ccc;
+  color: DimGrey;
+  font-weight: 450;
+  border-radius: 3px;
+}
+
+.form-group {
+  padding: 5px 0px !important;
+}
+
+
+h4 label {
+  font-size: inherit;
+  font-weight: lighter;
+  font-family: inherit;
+}
+
+
+.other {
+  height: 17px;
+}
+
+
+.input-group-addon {
+  background-color: white;
+  border: none;
+  font-size: 1em;
+}
+
+.buttonMed {
+  padding: -3px;
+  margin: 0px 10px;
+}
+/* form specifics ends */
+
+/* placeholder image for placeholder page */
+.construction {
+  width: 40%;
+  padding: 1px;
+  margin: 0px 30%;
+  vertical-align: middle;
+  justify-content: center;
+  display: inline;
+  border: 1px solid white;
+}
+
+/* start of personalized greeting area */
+.glyphicon.glyphicon-remove {
+  font-size: 0.8em;
+  margin: 5px;
+}
+
+
+.nameArea {
+  background-color: white;
+}
+
+/* end of personalized greeting area */
+
+/* start of random image selector*/
+/*.speechBubbles {
+  width: 200px;
+  margin: -40px 36.5% 0px 36.5%;
+  position: absolute;
+}*/
+
+
+/*.onTop {
+  position: absolute;
+  z-index: 10;
+  margin: 10px 42% 0px 42%;
+  font-size: 2em;
+  font-weight: bold;
+  color: gray;
+}
+
+.container {
+  position: relative;
+  margin-top: 10px;
+  height: 120px;
+}*/
+/* end of random image selector*/
+
+
+/* the star rating system start */
+
+.stars {
+  margin: 0px -10px;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.starsPicBlank {
+  width: 50px;
+  padding: 0px;
+  margin: 0px
+}
+/* the star rating system end */
+
+img#newspaper {
+  width: 60px;
+  display: inline;
+}
+
+
+
+#newspaperRoll {
+  display: inline;
+  margin-left: 20px;
+  vertical-align: middle;
+  justify-content: center;
+  /*margin: 0px 47% 10px 47%;*/
+}
+
+.youGotNews {
+  font-size: 0.8em;
+}
+
+#randomPics {
+  display: inline;
+  /*position: relative;*/
+  padding: 0px;
+  margin-left: 15%;
+}
+
+#randomPics img {
+  display: inline;
+  /*position: relative;*/
+  width: 50px;
+}
+
+.picSentence {
+  text-align: center;
+}
+
+.dark {
+  margin-top: 100px;
+  background-color: #929292;
+  height: 130px;
+}
+
+
+
+.row.faqs {
+  margin-top: 10px;
+}
+
+.faqsBackDrop {
+  background-color: #eeeeee;
+}
+
+
+/*.row.faqs {
+  padding: 0px;
+}
+*/
+
+
+.row.newsSectionArea, .regis, .rate {
+  display: block;
+}
+
+.row.regis, .row.rate {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 993px){
+/* the boxes around the various content starts */
+
+#answer {
+  margin-top: 40px;
+}
+
+.row.faqs .conventions {
+  box-sizing: border-box;
+  height: 100px;
+}
+
+.row.faqs .conventions {
+  /*background-color: lightgrey;*/
+  border: none;
+}
+
+.row.faqs .conventions h4 {
+  width: 250px;
+  font-size: 1em;
+  margin: 0px;
+}
+
+#question2 {
+  margin-top: -3%;
+}
+
+.row.faqs .answerBtn {
+  float: right;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.scroller{
+  margin-left: 7px;
+}
+
+.sideBoxes {
+  border: 1px solid gray;
+  box-shadow: 5px 2px 2px gray;
+  border-top: 20px solid #004d99;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.katsucon.sideBoxes {
+  border-color: #b74c4c;
+}
+
+.sideBoxes.social {
+  height: 210px;
+}
+
+.conventions {
+  border: 1px solid gray;
+  box-shadow: 5px 2px 2px gray;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.about p {
+  font-size: 0.8em;
+}
+
+
+
+.greyed {
+  margin-top: 200px;
+  background-color: #D0D0D0;
+  color: white;
+}
+
+/* might delete */
+.conventions.questions {
+  height: 100px;
+}
+
+#answer1, #answer2, #answer3, #answer4 {
+  float: right;
+}
+
+/*.conventions.aboutAreaBox {
+  margin-top: 100px;
+}*/
+
+.sideBoxes.rate {
+  margin-top: 90px;
+}
+
+
+.about-top.sideBoxes {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 20px solid Gray;
+}
+
+.about-top.sideBoxes.sources {
+  border-top: 20px solid #513EC8;
+}
+
+.about.sideBoxes {
+  border-top: 20px solid Gray;
+  margin-top: 80px;
+}
+
+.about.magfest.sideBoxes {
+  border-top: 20px solid RoyalBlue;
+}
+
+.bannerAnimeUSA {
+  background-color: #00CF86;
+  color: white;
+}
+
+.bannerOtakon {
+  background-color: #C27300;
+  color: white;
+}
+
+.bannerMagfest, .bannerAnimeUSA, .bannerKatsucon, .bannerOtakon {
+  /*height: 10%;*/
+  height: 40%;
+}
+
+.bannerMagfest {
+  background-color: RoyalBlue;
+  color: white;
+}
+
+.bannerKatsucon {
+  background-color: #e0b2b2;
+  color: white;
+}
+/* the boxes around the various content ends */
+
+/* the icon graph on the magfest page */
+.iconGraph {
+  width: 50%;
+  display: inline;
+  float: right;
+}
+
+.greyBackDrop {
+  background-image: linear-gradient(#E8E8E8, #E8E8E8);
+}
+
+.backDropReverse {
+  background-image:linear-gradient(#E8E8E8, white);
+}
+
+/* the gradient backdrops used on all the pages starts
+need the backdrop to disappear when the window gets too small, otherwise it looks awkward */
+.backDrop {
+  background-image:linear-gradient(white, #e8e8e8);
+}
+
+.backDrop1 {
+  background-color: white;
+}
+
+.backDrop2 {
+  background-image:linear-gradient(lightgrey, lightgrey);
+}
+
+
+.backdrop.Magfest {
+  background-image: linear-gradient(white, WhiteSmoke);
+}
+/* the gradient backdrops used on all the pages ends */
+
+/* this is a boundary for the scrolling news section on the homepage */
+hr.endPage {
+  border: 4px solid DarkGrey;
+}
+
+
+.aboutArea {
+  background-color: #929292;
+}
+
+.aboutArea span, .aboutArea h2 {
+  color: white;
+  margin-top: 0px;
+}
+
+/*.titlePrev {
+  background-color: #f1f1f1;
+}*/
+
+.card.introConvention {
+  box-shadow: 3px 2px 2px #DCDCDC;
+}
+
+.row.faqs .card {
+  border: none;
+  background-color: transparent;
+}
+
+.titlePreview {
+  /*border-top: 0.5px solid gray;*/
+  border-bottom: 0.5px solid #B8B8B8;
+  box-shadow: 0px 7px 9px #B8B8B8;
+  /*margin: 30px 0px;*/
+  /*background-color: #f1f1f1;*/
+}
+
+.titlePreviewBottom {
+  margin-top: 20px;
+  border-bottom: 0.5px solid #B8B8B8;
+  box-shadow: inset 0 -7px 9px #B8B8B8;
+}
+
+
+}
+
+@media only screen and (max-width: 993px){
+
+.row.faqs .answerBtn {
+    margin: 11px 45%;
+  }
+
+
+/* labels are made to disappear and go to a normal looking font when screen is small
+label styling start */
+.label.label-default.about{
+  background-color: transparent;
+  color: black;
+  font-size: 1.6em;
+  font-weight: normal;
+  margin-bottom: -8px;
+  margin-top: 20px;
+
+}
+
+.label.label-default.about.news{
+  margin-bottom: 5px;
+
+}
+/* label styling ends */
+
+/* image styling for small sizes starts */
+  .iconGraph {
+    width: 10%;
+    display: block;
+    align-content: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img.social {
+    width: 10%;
+  }
+
+   .banner {
+     height: 110%;
+     margin-top: 10%;
+   }
+
+/* image styling for small sizes ends */
+  .sideBoxes ul{
+    text-align: center;
+  }
+
+  /*#randomPics {
+    display: none;
+  }*/
+
+  .onTop {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 35%;
+    font-size: 2em;
+    font-weight: bold;
+    color: gray;
+  }
+
+  .container {
+    position: relative;
+    margin-top: 0px;
+    height: 50px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 500px){
+  /* the banner is decreased in size otherwise it'll overflow the page */
+  .banner {
+    height: 90%;
+    margin-top: 5%;
+    margin-left: -15px;
+  }
+
+/* this hides part of the table that doesn't fit on the page */
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+
+
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Conventions in NOVA Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="Magfest, Katsucon, AnimeUSA, school project, conventions, geek conventions, Northern Virginia"/>
+<meta charset="UTF-8"/>
+<meta name="description" content="Here's a few geek conventions worth checking out in Northern Virginia."/>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+<link rel="stylesheet" href="main.css"/>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript">
+
+var slowness = 3;
+var keepTrack = null;
+var counter = 0;
+var position = 35; //specifies the position or angle that the object of the animation is at
+
+function start(){
+  //rando(); //starts the random picture generator function from Project 2
+  animation(); //starts the animation process. This completes the d. requirement on Project 3.
+  //fadeInTite();
+}
+
+
+//This is the function dedicated to display an image randomly from a set of images
+//function rando(){
+  //an array dedicated to storing the file paths to the images that will be randomly displayed
+/*  var pictures = new Array(4);
+  pictures[0] = 'images/puffy.png';
+  pictures[1] = 'images/puffyRight.png';
+  pictures[2] = 'images/Speech_bubble.png';
+  pictures[3] = 'images/straightEdge.png';*/
+
+//the random number generator that the above array will use as an index so it can be random
+  /*var number = Math.floor(Math.random() * 4);
+  document.getElementById('randomPics').innerHTML = '<img src=\"' + pictures[number] + '\" class="speechBubbles"/>';
+}*/
+
+
+function animationTilt(){
+
+  counter += slowness;
+
+  if (counter >= 100){
+    window.clearInterval(keepTrack);
+    keepTrack = null;
+  }
+
+  var imageUse = document.getElementById("newspaper");
+
+  //rotates the image newspaper by the specified degrees and then specifies how long this transition to this degrees takes
+  imageUse.setAttribute("style", "transform: rotate(" + position + "deg); transition: transform 0.8s;");
+
+//this reverses the rotation of the image
+    position = position * -1;
+}
+
+
+
+function animation(){
+  if (keepTrack){
+    return;
+  }
+
+  var imageUse = document.getElementById("newspaper");
+  //initial state
+  //imageUse.setAttribute("style", "transform: rotate(0deg)");
+  counter = 0;
+
+
+//repeats the function every 1000 milliseconds until keepTrack is null
+  keepTrack = window.setInterval("animationTilt()", 1000);
+
+}
+
+//this is the event listener that loads when the page is loaded. Then on click of the div around the picture, it fade toggles the main banner picture.
+$(document).ready(function() {
+
+$('.row.bannerIcon').click(function() {
+  $('#bannerMain').fadeToggle();
+
+});
+
+$('.navbar-Area').load("navbar.html");
+
+
+$('.card-img-top').mouseover(function() {
+  $(this).css("opacity", "1");
+});
+$('.card-img-top').mouseout(function() {
+  $(this).css("opacity", "0.7");
+});
+
+});
+
+
+window.addEventListener("load", start, false);
+
+</script>
+</head>
+<!-- body start -->
+<body class="magfest">
+  <!-- Container body start-->
+  <div class="container-fluid">
+
+
+
+  <div class="row bannerIcon">
+    <div class="col-lg-12 col-md-12">
+      <div class="bg-white text-dark">
+  <img src="images/BannerConventions_v4.png" class="banner img-fluid" id="bannerMain" alt="main logo banner"/>
+</div>
+</div>
+</div>
+<!-- Banner end -->
+
+<!--Hero image starts -->
+
+  <div class="heroImage" id="centralBanner">
+
+</div>
+
+<!--Hero image ends-->
+
+
+<!-- this is my banner as a brand for the Website. Had to make a white gap with bg-white text-dark so that my banner wouldn't cover the behind art image
+Banner start
+-->
+
+  <!--Navigation menu starts-->
+<div class="navbar-Area">
+
+
+</div>
+  <!--Navigation menu ends-->
+
+<!-- main body --->
+
+<div class="greyBackDrop">
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+
+
+
+<!--- About Begin --->
+<div class="row about">
+<!--<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">-->
+<div class="col-xl-4 offset-xl-1 col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 offset-sm-0 aboutSect">
+
+
+<div class="card">
+  <div class="card-body">
+
+
+<!--<div class="aboutArea">
+    <h2>About <span class="glyphicon glyphicon-flag"></span></h2>
+</div>-->
+
+<button type="button" class="btn btn-lg btn-secondary calendarItems">
+  <span class="glyphicon glyphicon-flag"></span> About
+</button>
+
+  <!--<h2>About</h2>-->
+  <br/>
+  <br/>
+  <p>Were you ever curious about which geek conventions in the Washington area are the hippest around? </p><p><b>Look no further!</b><br/> This website lists a few that are definitely worth checking out.</p>
+  <p>What if you haven't ever been to a geek convention before?  <br/>Well, here's a rundown of what to expect: it's a 3 to 4 day event where people who share similar interests in that convention's theme gather and partake in various activities at the convention. These multi-day conventions are filled with all sorts of programming including but not limited to panels, autograph sessions, gaming centers, merchant rooms, contents, cosplay contests, etc.</p>
+
+
+  <h5 class="youGotNews"><span id ="newspaperRoll">
+    <a href="#newsSection"><img src="images/newspaperRoll.svg" id="newspaper" alt = "newspapers Roll" /></a>
+  </span><a href="#newsSection">Click here</a> to check out some news stories below!</h5>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-12 offset-sm-0">
+<div class="card">
+
+<div class="card-body">
+<button type="button" class="btn btn-lg btn-secondary calendarItems">
+  <span class="glyphicon glyphicon-calendar"></span> List of Events
+</button>
+<div class="table-responsive">
+<table class="table table-hover datesTable">
+  <tbody>
+  <tr>
+    <td><div class="dateNumber">3-6</div><div class="dateMonth">JAN</div></td>
+    <td class="descriptionCell">Magfest at the Gaylord National Hotel and Convention Center<td>
+  </tr>
+  <tr>
+    <td><div class="dateNumber">15-17</div><div class="dateMonth">FEB</div></td>
+    <td class="descriptionCell">Katsucon at the Gaylord National Hotel and Convention Center<td>
+  </tr>
+  <tr>
+    <td><div class="dateNumber">26-28</div><div class="dateMonth">JULY</div></td>
+    <td class="descriptionCell">Otakon at Washington Marriott Wardman Park Hotel<td>
+  </tr>
+  <tr>
+    <td><div class="dateNumber">19-21</div><div class="dateMonth">OCT</div></td>
+    <td class="descriptionCell">AnimeUSA at Washington Marriott Wardman Park Hotel<td>
+  </tr>
+</tbody>
+
+</table>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+<!--- About End--->
+
+
+<br/>
+<br/>
+
+<div class="row titlePrev">
+  <div class="col-12 titlePreview">
+
+    <!-- this is to add the gap -->
+
+</div>
+</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<div class="card-deck">
+  <div class="card introConvention">
+    <a href="magfest.html">
+    <img class="card-img-top" src="images/MagFest_banner.jpg" alt="Card image cap">
+    </a>
+    <div class="card-body">
+      <h4 class="card-title">Magfest</h4>
+      <p class="card-text">An annual 4 day gaming convention that embraces the culture around video games and video game music.</p>
+    </div>
+  </div>
+  <div class="card introConvention">
+    <a href="animeusa.html">
+    <img class="card-img-top" src="images/animeUSA_banner_v2.jpg" alt="Card image cap">
+    </a>
+    <div class="card-body">
+      <h4 class="card-title">AnimeUSA</h4>
+      <p class="card-text">This is a small 3 day anime convention that celebrates Japanese popculture, history, animation, art, etc.</p>
+    </div>
+  </div>
+  <div class="card introConvention">
+    <a href="katsucon.html">
+    <img class="card-img-top" src="images/katsucon_gaylord.jpg" alt="Card image cap">
+  </a>
+    <div class="card-body">
+      <h4 class="card-title">Katsucon</h4>
+      <p class="card-text">It's an annual 3 day anime convention that centers around anime and other multicultural entertainment.</p>
+    </div>
+  </div>
+  <div class="card introConvention">
+    <a href="otakon.html">
+    <img class="card-img-top" src="images/otakon_banner.jpg" alt="Card image cap">
+  </a>
+    <div class="card-body">
+      <h4 class="card-title">Otakon</h4>
+      <p class="card-text">A big 3 day anime convention that typically occurs in the summer which celebrates Asian pop culture and video games.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-12 titlePreviewBottom">
+      <!-- this is to add the gap -->
+  <br/>
+  <br/>
+</div>
+</div>
+
+
+
+
+
+<!--- Calendar End --->
+<!--<hr class="endPage" />-->
+<br/>
+<!--</div>-->
+<!--- BackDrop End--->
+
+
+<!--- BackDrop for Calendar Begins --->
+
+
+<!--- News Begin--->
+<span class="label label-default about news" id="newsSection">News <span class="glyphicon glyphicon-bullhorn"></span></span>
+<div class="row newsSectionArea">
+<!-- scroller class to ensure that this are has a max height of 200px and scrolls since it'll obviously be over that. This makes a nice container to hold the news that won't be obstructive. -->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 scroller">
+<div class="backDrop2">
+<!-- each news item has it's own row that spans the width of the page -->
+
+<!-- news item #1 starts -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <h5 id="moreConventions">More Comic Conventions in the Area!</h5>
+  <h6>June 6, 2018</h6>
+  <p>New conventions have come to the NOVA area! These are the All Star Comic Con and the Fairfax Comic Con in Fairfax. All Star Comic Con happened in the Sheraton Tysons Hotel in Tysons Corner while Fairfax Comic Con happened in the Dulles Expo Center. These small conventions have arisen due to the popularity of another NOVA comic convention called Awesome Con.</p>
+</div>
+</div>
+<!-- news item #1 ends -->
+<!-- news item #2 starts -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <h5>Otakon Abandons the Baltimore Convention Center for D.C.</h5>
+  <h6>August 11, 2013</h6>
+  <p>The 20 year old Otakon that was once a thriving convention in the Baltimore Convention Center, has now moved to a new convention space at the Walter E. Washington Convention Center! This move has occurred due to concerns of outgrowing the space that the Baltimore Convention Center had provided.</p>
+</div>
+</div>
+<!-- news item #2 ends -->
+<!-- news item #3 starts -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <h5>Awesome Con Invites more Celebrities</h5>
+  <h6>March 11, 2018</h6>
+  <p>Awesome Con has increased their lineup of celebrities to speak at panels or do autograph sessions during the convention. They have had actors from Guardians of the Galaxy, Star Trek: Deep Space Nine, Doctor Who, Boy Meets World, Star Wars: The Force Awakens, etc.</p>
+</div>
+</div>
+<!-- news item #3 ends -->
+
+
+</div>
+</div>
+<!--- News End--->
+
+<br />
+<br />
+</div>
+<!--- BackDrop End --->
+
+
+<!--- Footer Begin --->
+<div class="backDrop3">
+  <div class="row footer">
+<div class="col-lg-12 col-md-12 col-md-offset-0 col-sm-12 col-xs-12 footer">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+</div>
+</div>
+</div>
+<!--- Footer End --->
+
+
+
+
+  </div>
+<!-- Container body end-->
+
+</body>
+<!-- main body ends -->
+</html>

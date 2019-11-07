@@ -1,0 +1,32 @@
+[
+{
+  "id" : "answer1",
+  "question" : "Why are there multiple prices",
+  "faqAnswer": "Sometimes the convention has pricing for individual days rather the whole weekend or the cost of the weekend badge decreases with each day. Most offer VIP badges with additional perks aside from the full weekend pass."
+
+},
+{
+  "id" : "answer2",
+  "question" : "Where can I find a list of conventions in other states",
+  "faqAnswer": "You can on animecons.com"
+
+},
+{
+  "id" : "answer3",
+  "question" : "Which convention would fit for me",
+  "faqAnswer": "What do you find the most interesting? Gaming? Anime? Whatever you value most in geek culture should determine which convention you should go to. If you like anime then go to an anime convention."
+
+},
+{
+  "id" : "answer4",
+  "question" : "How do I get my badge for it",
+  "faqAnswer": "By paying on their website for the selected type of badge or paying at the front door at a higher price."
+
+},
+{
+  "id" : "answer5",
+  "question" : "Do I need to dress up or cosplay",
+  "faqAnswer": "There is no need to unless you really want to. However, geek conventions are the perfect place to cosplay as you'll be complimented by fans of whoever you're dressing up as."
+
+}
+]
