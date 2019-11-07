@@ -9,15 +9,14 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
 
 <link rel="stylesheet" href="main.css"/>
-<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="functions.js"></script>
 <script type="text/javascript">
@@ -28,25 +27,10 @@ var counter = 0;
 var position = 35; //specifies the position or angle that the object of the animation is at
 
 function start(){
-  //rando(); //starts the random picture generator function from Project 2
+   //starts the random picture generator function from Project 2
   animation(); //starts the animation process. This completes the d. requirement on Project 3.
-  //fadeInTite();
+
 }
-
-
-//This is the function dedicated to display an image randomly from a set of images
-//function rando(){
-  //an array dedicated to storing the file paths to the images that will be randomly displayed
-/*  var pictures = new Array(4);
-  pictures[0] = 'images/puffy.png';
-  pictures[1] = 'images/puffyRight.png';
-  pictures[2] = 'images/Speech_bubble.png';
-  pictures[3] = 'images/straightEdge.png';*/
-
-//the random number generator that the above array will use as an index so it can be random
-  /*var number = Math.floor(Math.random() * 4);
-  document.getElementById('randomPics').innerHTML = '<img src=\"' + pictures[number] + '\" class="speechBubbles"/>';
-}*/
 
 
 function animationTilt(){
@@ -76,11 +60,10 @@ function animation(){
 
   var imageUse = document.getElementById("newspaper");
   //initial state
-  //imageUse.setAttribute("style", "transform: rotate(0deg)");
   counter = 0;
 
 
-//repeats the function every 1000 milliseconds until keepTrack is null
+  //repeats the function every 1000 milliseconds until keepTrack is null
   keepTrack = window.setInterval("animationTilt()", 1000);
 
 }
@@ -167,10 +150,6 @@ Banner start
 <div class="card">
   <div class="card-body">
 
-
-<!--<div class="aboutArea">
-    <h2>About <span class="glyphicon glyphicon-flag"></span></h2>
-</div>-->
 
 <button type="button" class="btn btn-lg btn-secondary calendarItems">
   <span class="glyphicon glyphicon-flag"></span> About
@@ -317,9 +296,9 @@ Banner start
 
 
 <!--- Calendar End --->
-<!--<hr class="endPage" />-->
+
 <br/>
-<!--</div>-->
+
 <!--- BackDrop End--->
 
 

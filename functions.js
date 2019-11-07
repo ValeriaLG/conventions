@@ -96,5 +96,3 @@ window.addEventListener("load", lastModified, false);
 window.addEventListener("load", storeName, false);
 
 window.addEventListener("load", mousing, false);
-
-//window.addEventListener("load", rando, false);
